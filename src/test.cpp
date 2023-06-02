@@ -10,7 +10,7 @@ struct TestStruct
 
 struct by_a
 {
-    bool operator () (const TestStruct& lhs, const TestStruct& rhs)
+    bool operator () (const TestStruct& lhs, const TestStruct& rhs) const
     {
         return lhs._a < rhs._a;
     }
